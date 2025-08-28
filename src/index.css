@@ -23,3 +23,7 @@
 .animate-slide-left {
   animation: slideLeftFar 4s ease-in-out infinite;
 }
+.animate-slide-right:hover,
+.animate-slide-left:hover {
+  animation-play-state: paused;
+}
