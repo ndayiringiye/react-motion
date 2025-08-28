@@ -1,7 +1,10 @@
 import React from 'react'
+import SlidingPosition from './Components/SlidingPosition'
 
-export const App = () => {
+export default function App() {
   return (
-    <div>App</div>
+    <div>
+      <SlidingPosition />
+    </div>
   )
 }

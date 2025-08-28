@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "flowbite";
+
+@keyframes slideRightFar {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(calc(50vw - 80px)); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes slideLeftFar {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(calc(-50vw + 80px)); }
+  100% { transform: translateX(0); }
+}
+
+.animate-slide-right {
+  animation: slideRightFar 4s ease-in-out infinite;
+}
+
+.animate-slide-left {
+  animation: slideLeftFar 4s ease-in-out infinite;
+}
